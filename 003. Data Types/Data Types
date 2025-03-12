@@ -1,0 +1,49 @@
+package main
+
+import (
+	"fmt"
+)
+
+func main() {
+	// Boolean
+	var b bool = true
+
+	// String
+	var s string = "Hello, Go!"
+
+	// Integer types
+	var i int = 42
+	var i8 int8 = -8
+	var i16 int16 = -16
+	var i32 int32 = -32
+	var i64 int64 = -64
+
+	// Unsigned integer types
+	var u uint = 42
+	var u8 uint8 = 8
+	var u16 uint16 = 16
+	var u32 uint32 = 32
+	var u64 uint64 = 64
+	var uptr uintptr = uintptr(unsafe.Pointer(&i))
+
+	// Byte and Rune
+	var by byte = 255 // byte is alias for uint8
+	var r rune = 'A'  // rune is alias for int32
+
+	// Floating point numbers
+	var f32 float32 = 3.14
+	var f64 float64 = 3.1415926535
+
+	// Complex numbers
+	var c64 complex64 = complex(1.0, 2.0)
+	var c128 complex128 = complex(2.0, 3.0)
+
+	// Print values
+	fmt.Println("Boolean:", b)
+	fmt.Println("String:", s)
+	fmt.Println("Integers:", i, i8, i16, i32, i64)
+	fmt.Println("Unsigned Integers:", u, u8, u16, u32, u64, uptr)
+	fmt.Println("Byte and Rune:", by, r)
+	fmt.Println("Floats:", f32, f64)
+	fmt.Println("Complex:", c64, c128)
+}
